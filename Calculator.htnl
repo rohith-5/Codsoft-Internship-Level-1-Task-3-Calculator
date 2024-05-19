@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Calculator</h1>
+    <div class="calculator-card pt-3 pb-3">
+        <input id="display" readonly>
+        <div id="buttons">
+            <button onclick="displayEquation('7')" class="button-card">7</button>
+            <button onclick="displayEquation('8')" class="button-card">8</button>
+            <button onclick="displayEquation('9')" class="button-card">9</button>
+            <button onclick="clear()" id="clear" class="button-card spl-btn">AC</button>
+            <button onclick="displayEquation('4')" class="button-card">4</button>
+            <button onclick="displayEquation('5')" class="button-card">5</button>
+            <button onclick="displayEquation('6')" class="button-card">6</button>
+            <button onclick="del()" class="button-card spl-btn">Del</button>
+            <button onclick="displayEquation('1')" class="button-card">1</button>
+            <button onclick="displayEquation('2')" class="button-card">2</button>
+            <button onclick="displayEquation('3')" class="button-card">3</button>
+            <button onclick="displayEquation('%')" class="button-card spl-btn">%</button>
+            <button onclick="displayEquation('0')" class="button-card">0</button>
+            <button onclick="displayEquation('00')" class="button-card">00</button>
+            <button onclick="displayEquation('.')" class="button-card">.</button>
+            <button onclick="displayEquation('/')" class="button-card spl-btn">/</button>
+            <button onclick="displayEquation('+')" class="button-card spl-btn">+</button>
+            <button onclick="displayEquation('-')" class="button-card spl-btn">-</button>
+            <button onclick="displayEquation('*')" class="button-card spl-btn">*</button>
+            <button onclick="calculate()" class="button-card spl-btn">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
